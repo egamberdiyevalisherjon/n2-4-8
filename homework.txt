@@ -1,0 +1,27 @@
+Dashboard (Stats)
+
+Users
+  First name
+  Last name
+  Image (URL)
+  Age
+  Email
+  Password
+
+Products
+  Name
+  Price
+  Description
+  Image (URL)
+  Company
+  Category
+
+Orders
+  Date
+  ClientName
+  Total Price
+  Status
+    Created
+    Packing
+    InCar
+    Delivered

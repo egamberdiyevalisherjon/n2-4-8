@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fName": "Eshmat",
+      "lName": "Toshmatov",
+      "age": 32
+    },
+    {
+      "id": 2,
+      "fName": "Tesha",
+      "lName": "Boltayev",
+      "age": 23
+    },
+    {
+      "id": 3,
+      "fName": "John",
+      "lName": "Doe",
+      "age": 48
+    },
+    {
+      "id": 4,
+      "fName": "Jane",
+      "lName": "Doe",
+      "age": 13
+    },
+    {
+      "fName": "test",
+      "lName": "test",
+      "age": 23,
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Toshmatov's post",
+      "body": "Toshmatov's post body, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo ullam laudantium dolorem incidunt, sunt quam voluptatum consectetur unde sequi, delectus id itaque reprehenderit. Velit nemo architecto quis aspernatur recusandae?"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Boltayev's post",
+      "body": "Boltayev's post body, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo ullam laudantium dolorem incidunt, sunt quam voluptatum consectetur unde sequi, delectus id itaque reprehenderit. Velit nemo architecto quis aspernatur recusandae?"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "title": "Doe's post",
+      "body": "Doe's post body, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo ullam laudantium dolorem incidunt, sunt quam voluptatum consectetur unde sequi, delectus id itaque reprehenderit. Velit nemo architecto quis aspernatur recusandae?"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "title": "Doe's post",
+      "body": "Doe's post body, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo ullam laudantium dolorem incidunt, sunt quam voluptatum consectetur unde sequi, delectus id itaque reprehenderit. Velit nemo architecto quis aspernatur recusandae?"
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "title": "Smith's post",
+      "body": "Smith's post body, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quo ullam laudantium dolorem incidunt, sunt quam voluptatum consectetur unde sequi, delectus id itaque reprehenderit. Velit nemo architecto quis aspernatur recusandae?"
+    }
+  ],
+  "cars": []
+}

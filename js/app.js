@@ -81,3 +81,42 @@ let newUser = {
 
 // console.log(document.querySelector("p"));
 // document.querySelector("h1").style.color = "red";
+
+let usersList = document.querySelector("#users-list");
+let form = document.querySelector("form");
+
+axios.defaults.baseURL = "http://localhost:3000";
+
+const displayUser = (user) => {
+  let li = document.createElement("li");
+  li.innerText = `${user.fName} ${user.lName} - ${user.age}`;
+  usersList.append(li);
+  li.addEventListener("dblclick", async () => {
+    li.remove();
+    await axios.delete(`/users/${user.id}`);
+  });
+};
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  let fName = form[0].value;
+  let lName = form[1].value;
+  let age = +form[2].value;
+
+  let newUser = {
+    fName,
+    lName,
+    age,
+  };
+
+  let { data: user } = await axios.post("/users", newUser);
+
+  displayUser(user);
+});
+
+(async function () {
+  let { data: users } = await axios.get("/users");
+  users.forEach(displayUser);
+  // let { data: user } = await axios.get("http://localhost:3000/users/3");
+  // console.log(user);
+})();
